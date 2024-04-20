@@ -1,0 +1,49 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.block {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    margin: 10px;
+    position: absolute;
+}
+
+.inner {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.one {
+    background-color: red;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.two {
+    background-color: green;
+    top: 50px;
+    left: 50px;
+    z-index: 3;
+    transition: all 1s linear;
+    
+}
+
+.two:hover {
+    transform: scale(1.5) rotate(-45deg);
+    
+}
+
+.three {
+    background-color: blue;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
